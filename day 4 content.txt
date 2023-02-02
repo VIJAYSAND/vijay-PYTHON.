@@ -1,0 +1,71 @@
+DAY---4.....
+
+
+SRTINGS
+
+print(s.islower())
+print(s.isupper())
+print(s.istitle())
+print(s.startswith('hello',0,len(s)))
+print(s.starswith('hello'0,len(s)))
+print(s.find('a',0,len(s)))
+
+
+MUTABLE Vs IMMUTABLE::
+        mutable can be change after creation
+        immutable-can't be change after creation
+IMMUTABLE Ex::                                                 MUTABLE Ex::
+ int                                                                          list
+float                                                                        set
+string                                                                      dictionary
+bool
+tuple
+
+
+
+1)get one string and one character find the character is present or not
+2) check whether given number is palindrom or not
+    
+'''s=input("enter")
+char=input()
+for i in s:
+    if i==char:
+        flag=1
+        break
+    else:
+        flag=0
+if flag==1:
+    print("present")
+else:
+    print("not pressent")'''
+
+3)after getting one string as inp check whether space is there or not if yes print count of no of spaces
+4)create list with ovwels get one string as a input count vowels from the string and display string
+
+
+
+import math
+print("CEIL 12.5:",math.CEIL(12.5))
+print("FLOOR 12.5:",math.floor(12.5))
+print("SQRT 345:",math.sqrt(345))
+print("FACTORIAL 3:",math.factorial(3))
+print("power 2,3:",math.fmod(10,3))
+a,b=divmod(10,3)
+print(a,b)
+
+
+
+
+
+
+import math
+print("CEIL 12.5:",math.CEIL(12.5))
+print("FLOOR 12.5:",math.floor(12.5))
+print("SQRT 345:",math.sqrt(345))
+print("FACTORIAL 3:",math.factorial(3))
+print("power 2,3:",math.fmod(10,3))
+a,b=divmod(10,3)
+print(a,b)
+
+
+
