@@ -1,0 +1,102 @@
+DAY-03 python programming:: 
+
+LIST:
+     L=[1,7.5,3,5,7,"vijay"]
+     >>>L[1]
+     >>>7.5
+     >>> l[5]
+     >>>'vijay'
+     >>> l[-1]
+     >>>'vijay'
+
+
+Append() :  add an elements to the end of the list   -l.append()
+extend() : add all elements of a list to the another list -l.extend([5,6])
+insert() : insert an item at the defined index -l.insert(1,22)-l.index
+remove() : remove a item in the defined list
+pop() : pop an item out of the list
+clear() : clear the list
+index() : gives the index of the required item
+count() : counts the number of the items in list
+sort() : sort all the elements in list
+reverse(): reverse the order of elements in list
+copy() : copy the items in lis
+
+
+
+
+Programs:
+1) create a list with  10 items print the elements one by one
+2)create list with five float numbvers and find out the sum and average
+3) after creating a list with elements from the user extract only even numbers and print
+
+5)get a list of numbers input,return the product less than 750 else return sum
+
+
+l=list(map(int,input("enter:").split()))
+print(l)
+x=1
+y=0
+for i in l:
+    x=x*i
+    y=y+i
+if x<=750:
+    print("proad",x)
+else:
+    print("sum",y)
+
+
+
+
+
+######SUM:::
+
+s.added(element)
+s.update([20,40])
+s.discard(element)
+s.remove(element)..get errors is element  not present
+
+
+
+s1={1,2,3}
+>>>s2={4,5,6,1,2}
+>>>>>s1|s2 UNION......s1.union(s2)
+               {1,2,3,4,5,6}
+>>>>s1&s2 INTERSECT ....s1.intersection(s2)
+           {1,2}
+>>>>>s1-s2 DIFFERENCE...s1difference(s2)
+
+
+
+
+
+
+
+
+s={1,2,3}
+s1={1,2,3,4}
+s1.issuperset(s)
+True...
+set must have all elements of other set
+
+
+
+
+#######TUPLE():::
+
+ordered 
+un changable
+cant iclude items
+can fetch using t[index]
+count 
+
+
+
+
+######DICTIONARY:::::
+IT contanis two elements with two units and keys
+>keya must be unique...
+
+
+
+
