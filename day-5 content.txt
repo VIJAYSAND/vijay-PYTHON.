@@ -1,0 +1,373 @@
+RANDOM:::::::::::
+
+
+it is a python module
+for ex 
+program::
+import random as r
+x='i love sweets'
+print(r.sample(x,2))
+
+#everytime it gives different output
+a=[1,2,3,4]
+
+
+r.shuffle(a)
+print(a)
+
+a=[1,2,3,4,5,6]
+print(r.choice(a))
+
+b="welcome back"
+print(r.choice(b))
+
+a=r.random()
+print(a)
+#will  return random under number  between 0.0 to 1.0
+#0.0 includes 1.0 execludes
+
+print(r.randint(20,30))
+
+a=[10,20,30,40,50]
+print(r.choices(a,k=10))
+
+s="hello ggood day"
+print(r.choices(s,k=30))
+
+print(r.uniform(5,10))
+
+
+OUTPUT:::::::
+
+    ['t', 'v']
+[2, 4, 3, 1]
+4
+c
+0.9744090017718158
+20
+[30, 10, 50, 50, 40, 10, 10, 10, 50, 40]
+['o', 'l', 'g', 'd', 'o', ' ', 'y', 'g', 'l', 'y', ' ', ' ', 'o', 'g', 'g', 'e', 'o', 'o', 'o', 'e', 'o', 'd', 'o', 'h', 'l', 'a', 'a', 'a', 'g', 'd']
+9.24377373241144
+
+
+
+PRINT THE WHOLE YEAR CALENDAR::::
+
+#DISPLAY HOLE YEAR CALENDaR
+import calendar
+print("full calendar")
+print(calendar.calendar(2033))
+
+
+print("particular month")
+print(calendar.month(2022,2))
+
+print("set first day of the week")
+calendar.setfirstweekday(calendar.FRIDAY)
+print(calendar.month(2022,12))
+
+
+
+OUTPUT:::::::::::
+
+full calendar
+                                  2033
+
+      January                   February                   March
+Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su
+                1  2          1  2  3  4  5  6          1  2  3  4  5  6
+ 3  4  5  6  7  8  9       7  8  9 10 11 12 13       7  8  9 10 11 12 13
+10 11 12 13 14 15 16      14 15 16 17 18 19 20      14 15 16 17 18 19 20
+17 18 19 20 21 22 23      21 22 23 24 25 26 27      21 22 23 24 25 26 27
+24 25 26 27 28 29 30      28                        28 29 30 31
+31
+
+       April                      May                       June
+Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su
+             1  2  3                         1             1  2  3  4  5
+ 4  5  6  7  8  9 10       2  3  4  5  6  7  8       6  7  8  9 10 11 12
+11 12 13 14 15 16 17       9 10 11 12 13 14 15      13 14 15 16 17 18 19
+18 19 20 21 22 23 24      16 17 18 19 20 21 22      20 21 22 23 24 25 26
+25 26 27 28 29 30         23 24 25 26 27 28 29      27 28 29 30
+                          30 31
+
+        July                     August                  September
+Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su
+             1  2  3       1  2  3  4  5  6  7                1  2  3  4
+ 4  5  6  7  8  9 10       8  9 10 11 12 13 14       5  6  7  8  9 10 11
+11 12 13 14 15 16 17      15 16 17 18 19 20 21      12 13 14 15 16 17 18
+18 19 20 21 22 23 24      22 23 24 25 26 27 28      19 20 21 22 23 24 25
+25 26 27 28 29 30 31      29 30 31                  26 27 28 29 30
+
+      October                   November                  December
+Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su
+                1  2          1  2  3  4  5  6                1  2  3  4
+ 3  4  5  6  7  8  9       7  8  9 10 11 12 13       5  6  7  8  9 10 11
+10 11 12 13 14 15 16      14 15 16 17 18 19 20      12 13 14 15 16 17 18
+17 18 19 20 21 22 23      21 22 23 24 25 26 27      19 20 21 22 23 24 25
+24 25 26 27 28 29 30      28 29 30                  26 27 28 29 30 31
+31
+
+particular month
+   February 2022
+Mo Tu We Th Fr Sa Su
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28
+
+set first day of the week
+   December 2022
+Fr Sa Su Mo Tu We Th
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+
+
+
+
+
+
+how to find out all fuctions
+
+program::::::::
+
+import random as r
+z=dir(r)
+print(z)
+
+
+OUTPUT:::
+['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_ONE', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_accumulate', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_floor', '_index', '_inst', '_isfinite', '_log', '_os', '_pi', '_random', '_repeat', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randbytes', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
+
+
+
+#display date times:>
+import datetime
+a=datetime.datetime.now()
+print(a)
+
+sv=a.strftime("%y") #lower case
+fv=a.strftime("%Y") #upper case
+
+print("yesr short version",sv)
+print("year full version",fv)
+
+
+OUTPUT:::
+2023-02-02 20:46:33.516834
+yesr short version 23
+year full version 2023
+
+
+
+
+
+
+
+FUCTIONS:::::::::::::::
+ 
+classifications:
+1)pre-defined funcions
+2)user defined fuctions
+
+for code re-usability we use fuctions
+
+lets say we want to use  a particular time multiple times in our program instead of writing the same code multiple/many times we can
+write it once include that inside a function and can call the  function whereever we need it!!!
+
+TYPES::
+1)functions without arguments without return value
+2)functions without argument with return value
+3) functions with argumentt with return value
+4)functions with argument without reyturn value
+
+
+ex using functions 
+def sample():  #deef or descri[tion
+    print("great time")
+    print("training going on")
+
+sample() #call
+print("whats wrong with you")
+sample()
+   
+OUTPUT:::
+great time
+training going on
+whats wrong with you
+great time
+training going on
+
+
+
+
+
+##without argument without return value
+
+def multi():
+    x=int(input("enter:"))
+    y=int(input("enter:"))
+    z=int(input("enter:"))
+    prod=x*y*z
+    print(prod)
+multi()
+
+OUTPUT:::
+enter:10
+enter:36
+enter:78
+28080
+
+
+'''##without argument with return value
+def multi():
+    x=int(input("enter:"))
+    y=int(input("enter:"))
+    z=int(input("enter:"))
+    prod=x*y*z
+    return prod
+res=multi()
+print(res)
+
+
+
+
+
+#############with argument without return value
+def multi(x,y,z):
+    prod=x*y*z
+    print(prod)
+multi(3,4,5)
+####user input
+def multi1(p,q,r):
+    prod=p*q*r
+    print(prod)
+
+x=int(input("enetr:"))
+y=int(input("enetr:"))
+z=int(input("enetr:"))
+multi1(x,y,z)
+
+
+OUTPUT:::::::::
+60
+enetr:23
+enetr:23
+enetr:43
+22747
+
+
+##with argument with return value
+
+
+##static input
+def multi(x,y,z):
+    prod=x*y*z
+    return prod
+res=multi(3,4,5)
+print(res)
+
+
+####user input
+def multi1(p,q,r):
+    prod=p*q*r
+    return prod
+
+x=int(input("enetr1 :"))
+y=int(input("enetr2 :"))
+z=int(input("enetr3 :"))
+res1=multi1(x,y,z)
+print(res1)
+
+
+OUTPUT:::::::::::
+60
+enetr1 :12
+enetr2 :5
+enetr3 :3
+180
+
+
+
+1)write a program for lemon using 1 type
+ans)
+'''def lemons():
+    x=int(input("enter:"))
+    if(x==20):
+        print("yes")
+    elif(x>20):
+        print("excess",20-x)
+    else:
+        print("need some",x-20)
+lemons()'''
+
+OUTPUT:::
+enter:20
+yes
+
+
+3)pint multiplication table for given number using fuctions  3type
+
+
+ans))))))))
+
+n=6
+for i in range(1,21):
+    print(i,'X',n,"=",i*n)
+OUTPUT::::::
+
+1 X 6 = 6
+2 X 6 = 12
+3 X 6 = 18
+4 X 6 = 24
+5 X 6 = 30
+6 X 6 = 36
+7 X 6 = 42
+8 X 6 = 48
+9 X 6 = 54
+10 X 6 = 60
+11 X 6 = 66
+12 X 6 = 72
+13 X 6 = 78
+14 X 6 = 84
+15 X 6 = 90
+16 X 6 = 96
+17 X 6 = 102
+18 X 6 = 108
+19 X 6 = 114
+20 X 6 = 120
+
+
+2)find factors of the given numbers using fun 2type
+ans))
+
+4)find out sum of digits of the given numbers using functions type 4
+
+
+
+def digits(n):
+    sum=0
+    while n!=0:
+        rem=n%10
+        sum=sum+rem
+        n=n//10
+        return sum
+n=int(input("enter the number:"))
+res=digits(n)
+print(res)
+
+
+
+RECURSION METHOD OR RECURSION METHOD
+
+a function is called it's self is called as recursion  
+
+
+                                                  
+
+
