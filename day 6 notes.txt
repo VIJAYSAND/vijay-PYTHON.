@@ -1,0 +1,82 @@
+EXCEPTION  HANDLING::::::       
+when there is exception the developer doesnot want interruption or distrabance or exception in the program 
+flow to achive this we are exception handling
+
+a=100
+b=10
+try:
+    print(a/b)
+except:
+    print("please note number cant be divided by 0")
+finally:
+    print("resource closed")
+
+
+
+
+
+
+
+
+
+
+
+
+a=10
+try:
+    b=int(input("enter the a number:"))
+    print("resource opened")
+    print(b/a)
+except  ZeroDivisionError as e:
+    print("please note that the number cant be divided by 0",e)
+except ValueError as e:
+    print("invalid input",e)
+except exception as e:
+    print("other error")
+finally:
+    print("resource closed")
+
+
+
+
+'''x=10
+if x%2!=0:
+    raise Exception("x shud even number")
+else:
+    print("x is even numbr..correct")'''
+
+
+
+
+
+
+OOPS concepts:
+it is an efficient concept used in all languages like java and python 
+for multiple reason we use oops concepts 
+for example
+*code re-usability,data security,hiding data........
+
+CLASS
+it's a blue print example birds,laptops
+
+OBJECT
+it's a thing created based on class
+Note:one class can have multiple objects,but one object can have only one class
+
+example:: 1)class is Birds
+                  for class objects are peacock,parrot....
+                 2)laptop is class
+                 for class objects are redmi,dell,hp,mac,lenova 
+
+
+
+class computer:
+    def config(self):
+        print("YES")
+
+lenova=computer()
+lenova.config()
+
+dell=computer()
+dell.config()
+
